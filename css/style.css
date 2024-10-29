@@ -190,7 +190,9 @@ h1, h2 {
     text-transform: uppercase;
     font-weight: 200;
     font-style: italic;
+    margin: 10px;
 }
+/*
 .table {
     border: 3px rgb(0,168,142) solid;
     border-collapse: collapse;
@@ -220,9 +222,8 @@ h1, h2 {
     color: black;
     font-weight: bolder;
 }
+*/
 
-
-/* форма */
 #contact-form input[type="text"] {
     height: 20px;
     width: 250px;
@@ -230,6 +231,7 @@ h1, h2 {
     margin-bottom: 10px;
     border: white solid 1px;
     background-color: rgb(0,168,142);
+    margin: 10px;
 }
 
 #contact-form input[type="email"] {
@@ -239,6 +241,7 @@ h1, h2 {
     margin-bottom: 10px;
     border: white solid 1px;
     background-color: rgb(0,168,142);
+    margin: 10px;
 }
 
 #contact-form input[type="tel"] {
@@ -248,6 +251,7 @@ h1, h2 {
     margin-bottom: 10px;
     border: white solid 1px;
     background-color: rgb(0,168,142);
+    margin: 10px;
 }
 
 #contact-form input[type="date"] {
@@ -257,11 +261,13 @@ h1, h2 {
     margin-bottom: 10px;
     border: white solid 1px;
     background-color: rgb(0,168,142);
+    margin: 10px;
 }
 
 #contact-form select {
     border: white solid 1px;
     background-color: rgb(0,168,142);
+    margin: 10px;
 }
 
 #contact-form textarea {
@@ -271,6 +277,7 @@ h1, h2 {
     margin-bottom: 10px;
     border: white solid 1px;
     background-color: rgb(0,168,142);
+    margin: 10px;
 }
 
 #contact-form input[type="submit"] {
@@ -280,10 +287,43 @@ h1, h2 {
     text-transform: uppercase;
     color: rgb(0,168,142);
     background-color: rgb(0, 99, 84);
+    margin: 10px;
 }
 #contact-form input[type="submit"]:hover {
-    background-color: white;
-    color: black;
-    border: 2px black solid;
+    background-color: rgb(0, 255, 170);
+    color: rgb(0, 73, 49);
+    border: 2px rgb(163, 163, 163) solid;
     border-radius: 5px;
+    margin: 10px;
+}
+
+.table {
+    border: 3px rgb(0,168,142) solid;
+    border-collapse: collapse;
+}
+
+.table td,
+.table th {
+    border: 1px black solid;
+    padding: 10px 20px;
+    border-collapse: collapse;
+}
+
+.table tr:nth-child(odd) {
+    background-color: lightgrey;
+}
+
+.table th:nth-child(1) {
+    color: black;
+
+}
+
+.table tr:nth-child(5) {
+    color: black;
+
+}
+
+.table td:nth-child(1) {
+    color: black;
+    font-weight: bolder;
 }
