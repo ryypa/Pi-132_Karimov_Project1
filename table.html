@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблицы и формы</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <table class="table-example">
+        <caption>Счёт</caption>
+        <thead>
+            <tr>
+                <th>Наименование</th>
+                <th>Цена</th>
+                <th>Количество</th>
+                <th>Стоимость</th>
+                <th>Итог</th>
+            </tr>
+        </thead>
+            <tbody>
+                <tr>
+                    <td>Ручка</td>
+                    <td>50</td>
+                    <td>5</td>
+                    <td>250</td>
+                    <td rowspan="5">600</td>
+                </tr>
+                <tr>
+                    <td>Карандаш</td>
+                    <td>10</td>
+                    <td>4</td>
+                    <td>40</td>
+                    
+                </tr>
+                <tr>
+                    <td>Линейка</td>
+                    <td>20</td>
+                    <td>3</td>
+                    <td>60</td>
+                    
+                </tr>
+                <tr>
+                    <td>Ластик</td>
+                    <td>50</td>
+                    <td>2</td>
+                    <td>100</td>
+                    
+                </tr>
+                <tr>
+                    <td>Точилка</td>
+                    <td>30</td>
+                    <td>5</td>
+                    <td>150</td>
+                    
+                </tr>
+            </tbody>
+    </table>
+    <form id="form-example">
+        <label for="login">Введите логин</label><br>
+        <input type="text" id="login" required placeholder="Логин"><br>
+        <label for="pass">Введите пароль</label><br>
+        <input type="password" id="pass" required placeholder="Пароль"><br>
+        <input type="checkbox" id="agree" checked>
+        <label for="agree">Запомнить на этом компьютере</label><br>
+
+        <input type="radio" id="male" name="gender" checked>
+        <label for="male">мужской</label>
+        <input type="radio" id="female" name="gender">
+        <label for="female">женский</label><br>
+
+        <input type="submiet" disabled value="Войти"><br>
+    </form>
+</body>
+</html>

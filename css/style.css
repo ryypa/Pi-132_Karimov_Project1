@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 1.2em; 
+}
+body {
+    background-color:rgb(167, 255, 243);
+}
+header {
+    background-color: rgb(0, 105, 91);
+    text-align: center;
+    padding: 12px;
+    color: rgb(0, 189, 157);
+
+}
+footer {
+    background-color: rgb(0, 105, 91);
+    padding: 10px 50px;
+}
+.about {
+    background-color: rgb(193, 255, 247);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(0, 189, 157);
+    text-transform: uppercase;
+}
+p{
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+.avatar {
+    display: block;
+    margin: 0 auto;
+}
+.articles {
+    padding: 20px 79px;
+
+}
+
+.content{
+    padding: 20px 50px;
+}
+a{
+    color: rgb(0, 255, 200);
+}
+
+.articles a{
+    color: rgb(0, 95, 63);
+}
+.awards{
+    padding: 10px 50px;
+}
+.books{
+    padding: 10px 50px;
+}
+.earlyears{
+    padding: 10px 50px;
+}
+.cybersecurity{
+    padding: 10px 50px ;
+}
+.opinion{
+    padding: 10px 50px;
+}
+.creation{
+    padding: 10px 50px;
+}
+.info{
+    padding: 10px 50px;
+}
+.terms{
+    padding: 10px 50px;
+}
+img{
+    border-radius: 30px;
+}
+.table-example{
+    border: 5px rebeccapurple solid;
+    border-collapse: collapse;
+}
+.table-example td,
+.table-example th{
+    border: 5px rebeccapurple solid;
+    padding: 10px 20px;
+}
+.table-example td:nth-child(3){
+    color:rgb(0, 132, 255);
+    font-weight: bold;
+}
+.table-example tr:nth-child(odd){
+    background-color: aquamarine;
+    
+}
+.table-example tr:nth-child(odd) td{
+    border-bottom: 5px solid rgb(0, 132, 255);
+}
+#form-example{
+    width: 300px;
+    margin: 20px auto;
+}
+#form-example input [type="submiet"]{
+    background-color: rgb(200, 255, 243);
+    border: 1px rebeccapurple;
+    padding: 10px 20px;
+    color: blue;
+    border-radius: 5px;
+}
+#form-example input [type="submiet"]:hover{
+    background-color: rgb(55, 136, 109);
+    border-radius: 7px;
+}
+#form-example input [type="submiet"]:disabled{
+    background-color: greenyellow;
+    color:green;
+    border: 1px solid green;
+
+}
+#form-example input [type="text"],
+#form-example input [type="text"]{
+    background-color: brown;
+}
+a:focus {
+    color: rgb(55, 136, 112);
+}
+a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+.about a:focus {
+    color: blue;    
+}
+.about a:hover {
+    color: rgb(118, 118, 255);    
+}
+.articles a:focus {
+    color: rgb(0, 0, 0)
+}
+.articles a:hover {
+    color: rgb(117, 117, 117)
+}
+.page-list li:nth-child(odd) {
+    background-color: rgb(91, 196, 178);
+}
+.page-list .terms::after {
+    content: "Важно! ";
+    font-size: 30px;
+    margin-left: 10px;
+    color: red;
+    background-color: rgb(0, 173, 150);
+    border: black solid 5px;
+}
+.awards .p1::first-line {
+    letter-spacing: 7px;
+}
+.awards p:lang(en) {
+    color: rgb(0, 121, 94);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.articles h2 {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 255, 191);
+}
+footer img {
+    border: rgb(255, 255, 255) solid 5px;
+}
+.about img+p {
+    margin-top: 200px;
+}
+/* задание 11 */
+/* body a=0 b=0 c=1 -> специфичность = 1 */
+/* .pink a=0 b=1 c=0 -> специфичность = 10 */
+/* #logo a=1 b=0 c=0 -> специфичность = 100 */
+/* #mainnav ul a=1 b=0 c=1 -> специфичность = 101 */
+/* #mainnav .active a=1 b=1 c=0 -> специфичность = 110 */
+/* #mainnav a:hover a=1 b=1 c=1 -> специфичность = 111 */
+/* #mainnav ul li.active a=1 b=1 c=2 -> специфичность = 112 */
+h1 {
+    font-family: "Yeseva One", serif;
+}
+h1, h2 {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-style: italic;
+}
+.table {
+    border: 3px rgb(0,168,142) solid;
+    border-collapse: collapse;
+}
+
+.table td,
+.table th {
+    border: 1px black solid;
+    padding: 10px 20px;
+}
+
+.table tr:nth-child(odd) {
+    background-color: lightgrey;
+}
+
+.table th:nth-child(1) {
+    color: black;
+
+}
+
+.table tr:nth-child(5) {
+    color: black;
+
+}
+
+.table td:nth-child(1) {
+    color: black;
+    font-weight: bolder;
+}
+
+
+/* форма */
+#contact-form input[type="text"] {
+    height: 20px;
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: white solid 1px;
+    background-color: rgb(0,168,142);
+}
+
+#contact-form input[type="email"] {
+    height: 20px;
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: white solid 1px;
+    background-color: rgb(0,168,142);
+}
+
+#contact-form input[type="tel"] {
+    height: 20px;
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: white solid 1px;
+    background-color: rgb(0,168,142);
+}
+
+#contact-form input[type="date"] {
+    height: 20px;
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: white solid 1px;
+    background-color: rgb(0,168,142);
+}
+
+#contact-form select {
+    border: white solid 1px;
+    background-color: rgb(0,168,142);
+}
+
+#contact-form textarea {
+    height: 20px;
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: white solid 1px;
+    background-color: rgb(0,168,142);
+}
+
+#contact-form input[type="submit"] {
+    width: 200px;
+    padding: 10px 30px;
+    border: none;
+    text-transform: uppercase;
+    color: rgb(0,168,142);
+    background-color: rgb(0, 99, 84);
+}
+#contact-form input[type="submit"]:hover {
+    background-color: white;
+    color: black;
+    border: 2px black solid;
+    border-radius: 5px;
+}
